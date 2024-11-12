@@ -1,0 +1,493 @@
+<!DOCTYPE html><html lang="uk"><head>
+    
+            <meta charset="utf-8">
+    <meta name="viewport" content="width=480">
+    <title>Інтернет-магазин</title>
+    <meta name="description" content="Великий асортимент">
+    <meta name="keywords" content="Інтернет-магазин">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/GothamPro.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Масажна подушка з прогріванням">
+    <meta property="og:description" content="Масажна подушка з прогріванням це відмінна профілактика безлічі захворювань хребта, що дозволяє, крім того, позбутися і від втоми. Масажні ролики імітують дії рук масажиста, даруючи вам незабутні відчуття. Зручна лямка-фіксатор дозволить закріпити подушку на будь-якому стільці чи сидінні авто.">
+        <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="kAYIzRXY_WKz8Q3NAzDii1dURZ_BcRgFF-4nqjmotNnCVE-9YpnQON-hPJVPVpvaHmUG7pRDbW1hvUHyUPzmlg==">
+
+<style>
+    #fast-delivery-widget {
+        position: fixed;
+        bottom: 35px;
+        left: 20px;
+        z-index: 999;
+        padding: 10px 30px 10px 70px;
+        border-radius: 5px;
+         -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,.15);
+        box-shadow: 0 0 16px 0 rgba(0,0,0,.15);
+    }
+    #fast-delivery-widget .fast-delivery-widget__close {
+        display: block;
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    #fast-delivery-widget .fast-delivery-widget__close:before,
+    #fast-delivery-widget .fast-delivery-widget__close:after {
+        content:'';
+        display: block;
+        width: 1px;
+        height: 15px;
+        position: absolute;
+        top:-2px;
+    }
+    #fast-delivery-widget .fast-delivery-widget__close:before {
+        left: 5px;
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    #fast-delivery-widget .fast-delivery-widget__close:after {
+        left: 5px;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    #fast-delivery-widget.fast-delivery-widget_light .fast-delivery-widget__close:before,
+    #fast-delivery-widget.fast-delivery-widget_light .fast-delivery-widget__close:after {
+        background: #b5b5b5;
+    }
+    #fast-delivery-widget.fast-delivery-widget_green .fast-delivery-widget__close:before,
+    #fast-delivery-widget.fast-delivery-widget_green .fast-delivery-widget__close:after {
+        background: #fff;
+    }
+
+    #fast-delivery-widget .fast-delivery-widget__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.5em;
+        letter-spacing: .2px;
+    }
+    #fast-delivery-widget .fast-delivery-widget__info {
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+
+    #fast-delivery-widget.fast-delivery-widget_light {
+        color: #333;
+        background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAFFklEQVRYhcXYaYydUxgH8N+t0dYyU0qLoqViryX2ZVS1tEVryRBrLJUYiYgPEiFEgk8IQiQm9lL70qIttaczidoaS60tsS+lWrdMtarjw3Pe3neue8edMcM/OXnvPec95/zfZzvPcwrNrfV6iH7YHielthQPYw4+w+paFmlpLFbsr+sBoYEYgyYcj01yYwdjMZ7FLLTh2x7s0S1imyYyJyYCA1P/EjyJ9XEUhuKM1N7GXMzAK+joLWL9MBJn4hRslxv7FPfiMXyCdbAtjhWq3R17pnZOIvkkHsVX+LOrjQtVbKwe+ycyTRiU+tsxPxF6BL9UWXcARieCY8o+qIinMR3zWhqL39RCbBgm4ARMFBKD74VRP5aef1QhVAnDMV6ouRFDcmPvYDZeQmtLY3FlObFdcTqOxm65iR/hfjyFd7tBZisckjb+INtLqHWc0MIBufeXC1XPwvSWxuInhebW+qtwPganl1YIQ50mpLOkRjL9sQvOThsPEyFkBm4VJrAmvduQSB6HI7FTbp0luKvQ3Fq/FBvlBubiYrxWI6EBGIspQuLrpf7VSs71O2Zialo/C15DE7mr0+8MvxSaW+t/KOuEn/C88KDn8FsXxCYJVRfS/w6h/qnYW0hwx9z7LwrDHybseK/cWPYxiwvNrfWLhUHeINR4rpKBrsZbeAgPiOBZjgPS2La5vvlpzn1YNxG4DCOqfNwbuAtb4Ar82C83+Bouxz64VBh+nQgbN+J1XIs90mYZ5glvuzCtsSxJ4VoswJVCcoN0xspEZizGtjQWW/BhNpiX2BTcnZvYIPR/kvCwLK6swONCXfMSkTwmJVI7V5DMl+k5HO9jVP6sPK+t4exEtpPEylEUgXRSIngLvhbGfbqIP9OFpLYRnnWhOIqGlK21BtdhctqYiJH9q21ey1nZIQLgS7gZxwiD3lVE9TG4IK2Vt6FFqU0Ux89N+CbN/0d0JbFKWIjrhWpPFp7bLo6cEUKtc3CWiFNXp3kFJVOoKXHoLrEMWe41Prf5r0JVE0Wo+E0ppmXk8s8+IZbHF+nZLkJLHpVItHcxtha9QSyTSj8ldZVjDVYJle+X+rpUaU8y2HJ0VPmdR0GEot2V4tmvusjJeoNYV8jWX1c4DJEktuF2/yOx74SjbCw8eBZeVkMK1dfE3sPhIgNZIPKumtDXxNaIA73b6A2v7BNUIzYSO/yXRMpRidhuaMWruAeH6hzB+xJrg26eWFahdKQ2WNSTr4i8/VSdq+6+wIpKxLJiZIE4765RcuvxIv+6Q41nXQ+xWfajTiknugyjRHXUhktEqjJOZAvjRPLYqzivraFBHP6TRTYLA+pwpyjhN0ezSPTm4jaRDE5LbZQImDXfP3SBDUU+15TayNzYMjxQh4vwYCI0XlQ0E1KbL1Q4U6j432KUcKbjcZiSKa0SBe8cPNHSWHw7C7BvpjZSFKBNaeJeqV0gVckik+2O1IYqXRGMxpa5sYXiymqOuCJYWwBUu1QZjINEbj9ZXDERlyivizDyhChkTxVS/Sl92PIkiYPSB07QuTBpxwviHqS1pbH4eSUC1Y6kn4X6nhFl/5S0ydY4IrX3RIGSeXOHCMr7pQ/aV6nMWylKsxmiiF7oHy5mqkmsEoaJUq4JByrZxx+JwCoRh/L148fCw2cIKf1evmhvXHV+KwrfO4XEjhNGvEEa75/acmE3sxOpRd3Yo0fEMhRFwfuUqBVPE1Isisu82eKG8W/S6Q7+AhQaQsvQfI6FAAAAAElFTkSuQmCC) no-repeat  15px center;
+    }
+
+    #fast-delivery-widget.fast-delivery-widget_green {
+        background: #67c30d url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAExUlEQVRYhcWYe4hXRRTHP7s+1lLX0rSyl1iKlZqR9KA3pVhtkEllapZQUQQVPdA/pCh7kGFRGASp2UusoPQPzcpealiBJiZWupmWJK6K66rrez/9MXPdu3fvPn4/3PrCcOfO3JnznXPOzD1nSlSKRCnQD7gjlp3Ah8DnwAbgcLETA5QUQawTcA0wChgJ9Mj0VwGLgAXAMuCftiZ2UiRzG3B5JAiwA5gPHA/cCJSnxqwClgDzgG+B1mtBba6UqueoU9RKG6JSfUo9T22vlqkD1InqSvVw6ts96jL1SbWP2q4FuU0S66per85Uq1MC9qpL1fvUbs1MXKYOU2fkLGiX+r46Sj2ttcR6qxPUBeqR1GRb1NlqhdqhpdVmypnqveonalWG5Cr1haiEsjxi56svqqszA39VJ6uDCyRzunqnwcxJW4l6ofqEujwjp0ZdYnCD/gmxZ9UdqY9q1YXqGLVHAWQ6qkPU19TNal2cd6Y61OCvybfl6lXqK3HxaWxXp6LuzHR8p15SAKEy9Qb147ioBIdS9X2xvyKSSsb2Uu9Xt2Y4VJPTqLpNnaOOVDu3QKwiaidBnfqewW8mqr9l5l6sPqQ+r67I9CWL2Yr1DjlNfc6GDnpI/UF9NK4uj9il6oaMgBWGo+EU9QzDLt6Yo4AEP6kPqM/E96o0sdut30WTbGz7jepU9QIb78ze6sNxEWnX2K7OUt+0scvsN/jftWqXOM/oPGITMsLK1fGGo6MmNWGtwVQj1BPMN+3aJjSzKRbVNTljJyTESpv5KdQA7wIVwC3AdGAzcBwwDlgIfAo8AvQBBsT6eKBnZq464GXgZmBWbCsFOjb3S2pKY3mln/p4XG0alTb2ofXqZ7F+0PpTfnJsW2s4YgrWWB7WA9OAK4HRwJdALXA2cBZQTQh77gGGAFPiuBKga6y3b42gQoklSGKv4SnhewimGgG8A+wlmD1BSebZJsTS2BSftcCKTF8eidpm+o7iWBBLtFJKvbmyqAMOEkx+cWxr1qStsncLsIl6GiXA28BgoFts2wMcaUtizSGZvwNhwwD8TQi53+J/JLaFsFFOJOzgBcA3wOqWBrY1sV+A64EyYA2wu7UD25pYHbCymIHHYle2CZoi1hfo/18SySKP2CBgKbAcmA1cTcMTvC1x9NBNEzsQn8bSHbibkKjOA8bQOOs+1tiXR6x7fK4h/O9eon5bDwc+AGbQyn9dkTj5aM36hHaLIdK8IhWGnKqOM8Tpql8Z0rC8UGWb2rMVoVO2lKtj1bmpEGwXhlg/nW3XqovUW9VOqQkGmp/OFUOsiyETm6r+0TCMc6f6RvLhUPV1G2c0K9THjEloE6UQYgMNGdJiG2b6B9QfDTnuEG18RdA3Dvw6Q/BPdbp6nYWbspfBHeYYEuE01kWF3GTDfLPJS5XuhqRiruEiJUG1+oUhS0/MPCZFrGtsKzX46qs2Tkz2qvPVuww3P7kcWvKFduqgKOCvjIDVhix6UnyvUi9SH1S/N8T5CfarP6tPG+4zWryYKeTirjfhSnMUcBn1R80hQlhzkHAOdUuN+Z0Q4swDFgP7WyusmKvOcmAYIaUbCXTO9O8mXHUujKQqCxVQLLEEHYBzgbEELdYAH0VC6yhAO3n4FwMIGWoKRfvWAAAAAElFTkSuQmCC) no-repeat 15px center;
+        color:#fff;
+    }    
+</style></head>
+
+<body>
+    <script async="" src="js/fbevents.js"></script><script type="application/ld+json" id="mySchema">{"@context":"https://schema.org/","@type":"Offer","sku":12,"name":"Массажная Подушка","category":"Товары для Дома","availability":"https://schema.org/InStock","price":399,"priceCurrency":"UAH"}</script>    <div class="wrap">
+        <header class="active">
+            <a class="logo" href="/#home">
+                <img src="" alt="">
+            </a>
+            <svg class="nav-button" id="hamburger" fill="none" viewBox="0 0 52 23">
+                <path stroke="#fff" stroke-linecap="round" stroke-width="3" d="M2 1.5h48M2 21.5h48M2 11.5h48"></path></svg>
+        </header>
+        <nav id="menu" class="modal-body">
+            <div class="modal-block">
+                <ul>
+                    <li>
+                        <a href="/#home">Головна </a><svg viewBox="0 0 16 16">
+                            <path d="M6 8l4-3.5v7L6 8z"></path></svg>
+                    </li>
+                    <li>
+                        <a href="/#peculiarities">ОСОБЛИВОСТІ </a><svg viewBox="0 0 16 16">
+                            <path d="M6 8l4-3.5v7L6 8z"></path></svg>
+                    </li>
+                    <li>
+                        <a href="/#description">Опис </a><svg viewBox="0 0 16 16">
+                            <path d="M6 8l4-3.5v7L6 8z"></path></svg>
+                    </li>
+                    <li>
+                        <a href="/#characteristics">Характеристики </a><svg viewBox="0 0 16 16">
+                            <path d="M6 8l4-3.5v7L6 8z"></path></svg>
+                    </li>
+                    <li>
+                        <a href="/#order_form">замовити </a><svg viewBox="0 0 16 16">
+                            <path d="M6 8l4-3.5v7L6 8z"></path></svg>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="home" class="b1 start">
+            <h1>Масажна подушка</h1>
+            <h2 class="gradient">Роликовий масажер із зігрівальним ефектом</h2>
+            <div class="sale">
+                тільки сьогодні!
+                <span>-
+                    35%</span>
+            </div>
+            <ul class="checklist">
+                <li>
+                    <p>Для дому та тривалих поїздок</p>
+                </li>
+                <li>
+                    <p>Компактна та зручна</p>
+                </li>
+                <li>
+                    <p>Для всіх частин тіла</p>
+                </li>
+            </ul>
+            <div class="formbox">
+                <h3>Встигни замовити по акції!</h3>
+                <ul class="price">
+                    <li class="old-price">
+                        613                        <small>
+                            грн.</small>
+                    </li>
+                    <li>
+                        399                        <small>
+                            грн.</small>
+                    </li>
+                </ul>
+                <div class="timerbox">
+                    Підвищення ціни через:
+                    <div class="timer2 clearfix">
+                        <div class="timer2_item">
+                            <div class="count hours"></div>
+                            <div class="text">ч</div>
+                            :
+                        </div>
+                        <div class="timer2_item">
+                            <div class="count minutes"></div>
+                            <div class="text">м</div>
+                            :
+                        </div>
+                        <div class="timer2_item">
+                            <div class="count seconds"></div>
+                            <div class="text">с</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="/#order_form" class="btn">Замовити зараз</a>
+            </div>
+        </section>
+        <section id="description" class="b2">
+            <h2 class="title">
+                Масажна подушка
+                <br>
+                <span>
+                    використовує техніку
+                    <br>массажа Шиацу</span>
+            </h2>
+            <div class="video-container shadow">
+                <div class="youtube" id="FFsI3smJoAQ">
+                    <img src="images/bg-preview.jpg" alt="">
+                </div>
+            </div>
+            <p>
+                Шиацу - японська масажна техніка, що дійшла з давнини до наших днів, <b> що дозволяє не тільки розслабитися, а й оздоровитися.</b>
+            </p>
+            <p>
+                Масажна подушка має особливу анатомічну форму та вигини, які дозволяють
+                <b>благотворно впливати на важливі точки організму.</b>
+            </p>
+            <!-- <span>
+                Функціональний та
+                <br>ефективний</span>
+            <ul class="checklist">
+                <li>
+                    <p>Відновлює м'язи</p>
+                </li>
+                <li>
+                    <p>Знімає втому та напругу</p>
+                </li>
+                <li>
+                    <p>Допомагає боротися з мігренню</p>
+                </li>
+                <li>
+                    <p>Гармонізує душевний стан</p>
+                </li>
+            </ul> -->
+            <a href="/#order_form" class="btn">Замовити масажер</a>
+        </section>
+        <section id="peculiarities" class="b3 gradient">
+            <h2 class="title">
+                Один з популярних 
+                <br>
+                у своєму класі масажерів</h2>
+            <div class="best__item">
+                <img src="images/best1.jpg" alt="">
+                <p>
+                    <b>Інфрачервоний підігрів</b>
+                    Підвищує ефективність масажу.
+                </p>
+            </div>
+            <div class="best__item">
+                <img src="images/1.gif" alt="">
+                <p>
+                    <b>4 вбудовані ролики</b>
+                    Забезпечують точковий масаж
+                </p>
+            </div>
+            <div class="best__item">
+                <img src="images/best2.jpg" alt="">
+                <p>
+                    <b>Компактний розмір</b>
+                    Дозволяє брати роликовий масажер із собою в дорогу чи на роботу
+                </p>
+            </div>
+        </section>
+        <section class="b4">
+            <h2 class="title">
+                <span>Підходить</span>
+                для всіх!</h2>
+            <p>
+                Завдяки особливій анатомічній формі подушка може масажувати як втомлені ноги, так і затеклі плечі та спину.
+            </p>
+            <div class="body">
+                <div class="body__item">
+                    <img src="images/body1.jpg" alt="">
+                    <p>Шия</p>
+                </div>
+                <div class="body__item">
+                    <img src="images/body2.jpg" alt="">
+                    <p>Лопатки</p>
+                </div>
+                <div class="body__item">
+                    <img src="images/body3.jpg" alt="">
+                    <p>Живіт</p>
+                </div>
+                <div class="body__item">
+                    <img src="images/body4.jpg" alt="">
+                    <p>Поперек</p>
+                </div>
+                <div class="body__item">
+                    <img src="images/body5.jpg" alt="">
+                    <p>Стегна</p>
+                </div>
+                <div class="body__item">
+                    <img src="images/body6.jpg" alt="">
+                    <p>Стопи</p>
+                </div>
+            </div>
+            <a href="/#order_form" class="btn">Замовити зі знижкою</a>
+        </section>
+        <section class="b5 gradient">
+            <h2 class="title">Насолоджуйтесь масажем навіть за кермом автомобіля</h2>
+            <img src="images/2.gif" alt="">
+            <p>
+                Масажер підключається до розетки або автомобільного прикурювача через адаптери живлення, що йдуть у комплекті з пристроєм, тому ідеально підходить для використання вдома, офісі, автомобілі.
+            </p>
+        </section>
+        <section class="b6">
+            <h2 class="title">
+                <span>Професійний</span>
+                <br>масажист у вас вдома!</h2>
+            <ul class="use">
+                <li>
+                    <span>1</span>
+                    Підключіть подушку
+                    <br>до джерела живлення</li>
+                <li>
+                    <span>2</span>
+                    Виберіть
+                    <br>
+                    необхідний режим
+                    <br>масажу</li>
+                <li>
+                    <span>3</span>
+                    Масажируйте
+                    <br>
+                    необхідне місце</li>
+            </ul>
+        </section>
+        <section id="characteristics" class="b7">
+            <h2 class="title">
+                <span>
+                    Технічні
+                    <br>характеристики</span>
+                    і
+                <br>комплектація</h2>
+            <img src="images/char.jpg" alt="">
+            <ul class="char">
+                <li>
+                    <b>Подушка (1шт)</b>
+                    <span>31х10х18 см, вага 1,5 кг</span>
+                </li>
+                <li>
+                    <b>Знімний чохол</b>
+                    <span>да</span>
+                </li>
+                <li>
+                    <b>Живлення</b>
+                    <span>220v</span>
+                </li>
+                <li>
+                    <b>Автомобільний перехідник</b>
+                    <span>12v</span>
+                </li>
+                <li>
+                    <b>Режими масажу</b>
+                    <span>4 режими</span>
+                </li>
+                <li>
+                    <b>Підігрів</b>
+                    <span>до 40°С</span>
+                </li>
+                <li>
+                    <b>Автовимкнення</b>
+                    <span>так</span>
+                </li>
+                <li>
+                    <b>Управління</b>
+                    <span>«розумна кнопка»</span>
+                </li>
+            </ul>
+            <a href="/#order_form" class="btn">Замовити зараз</a>
+        </section>
+        <section class="b8 gradient">
+            <h2 class="title">
+                Відгуки та відеоогляди
+                <br>від наших покупців</h2>
+            <div class="reviews__item">
+                <!--<div class="video-container shadow">
+          <div class="youtube" id="MQXuACXaeZY"></div>
+        </div>-->
+                <div class="person">
+                    <img src="images/ot1.jpg" alt="">
+                </div>
+            </div>
+            <a href="/#order_form" class="btn">Замовити зі знижкою</a>
+        </section>
+        <section class="b9">
+            <h2 class="title">Доставка і оплата</h2>
+            <ul class="delivery">
+                <li>
+                    <img src="images/del1.png" alt="">
+                    <p>
+                        <b>Швидка доставка</b>
+                        Поштою протягом 1-3 днів
+                    </p>
+                </li>
+                <li>
+                    <img src="images/del2.png" alt="">
+                    <p>
+                        <b>Оплата при отриманні</b>
+                        Жодних передоплат! Оплата проводиться тільки при отриманні замовлення на руки
+                    </p>
+                </li>
+                <li>
+                    <img src="images/del3.png" alt="">
+                    <p>
+                        <b>Гарантія</b>
+                        Перед відправкою товари проходять ретельну перевірку щодо браку
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="b1 end">
+            <h1>Масажна подушка</h1>
+            <h2 class="gradient">Роликовий масажер із зігрівальним ефектом</h2>
+            <div class="sale">
+                тільки сьогодні!
+                <span>-
+                    35%</span>
+            </div>
+            <div class="formbox">
+                <h3>Замовте зараз!</h3>
+                <p>
+                    і ми передзвонимо вам
+                    <br>для уточнення деталей замовлення</p>
+                <ul class="price">
+                    <li class="old-price">
+                        613                        <small>
+                            грн.</small>
+                    </li>
+                    <li>
+                        399                        <small>
+                            грн.</small>
+                    </li>
+                </ul>
+                <div class="timerbox">
+                    Підвищення ціни через:
+                    <div class="timer2 clearfix">
+                        <div class="timer2_item">
+                            <div class="count hours"></div>
+                            <div class="text">ч</div>
+                            :
+                        </div>
+                        <div class="timer2_item">
+                            <div class="count minutes"></div>
+                            <div class="text">м</div>
+                            :
+                        </div>
+                        <div class="timer2_item">
+                            <div class="count seconds"></div>
+                            <div class="text">с</div>
+                        </div>
+                    </div>
+                </div>
+                <form id="order_form" class="main-order-form main-form" action="/order" method="POST">
+                    <input class="field" name="name" type="text" placeholder="Ваше ім'я" required="">
+                    <input class="field" name="phone" type="tel" placeholder="Ваш телефон" required="">
+                    <button class="btn">Оформити замовлення</button>
+                    <input type="hidden" name="_csrf" value="kAYIzRXY_WKz8Q3NAzDii1dURZ_BcRgFF-4nqjmotNnCVE-9YpnQON-hPJVPVpvaHmUG7pRDbW1hvUHyUPzmlg==">
+                </form>
+                <div class="freecal">*Дзвінок для вас абсолютно безкоштовний!</div>
+            </div>
+        </section>
+        
+           
+                    <a style="color:inherit;" href="politics.html">Політика конфіденційності</a>
+                    <br>
+                    <a style="color:inherit;" href="agreement.html">Угода користувача</a>
+                    <br>
+                    <a style="color:inherit;" href="garantiya.html">Умови гарантії та повернення</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script defer="" src="js/jquery.min.js"></script>
+    <script defer="" src="js/previewYouTube.js"></script>
+    <script defer="" src="js/main.js"></script>
+    
+
+<div id="fast-delivery-widget" class="fast-delivery-widget_light">
+    <span class="fast-delivery-widget__title">Швидка доставка</span>
+    <p class="fast-delivery-widget__info">
+        в Ваше місто    </p>
+    <div class="fast-delivery-widget__close"></div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script>
+        // Facebook Pixel
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '162700133473258');fbq('track', 'PageView');
+    </script>
+<script>jQuery(function ($) {
+
+            $('a[href^="/#"]').click(function(e){
+                e.preventDefault();
+                var _href = $(this).attr('href').slice(1);
+                $('html, body').animate({scrollTop: $(_href).offset().top+'px'});
+                return false;
+            });
+        
+
+    document.querySelector('.fast-delivery-widget__close').addEventListener('click', function() {
+        document.getElementById('fast-delivery-widget').style.display = 'none';
+    });
+
+});</script>
+
+
+</body></html>
